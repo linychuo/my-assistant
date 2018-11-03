@@ -1,5 +1,3 @@
-# my favorite editor or tools
+# ide plugins 
 
-- VSCode
-- Sublime
 - Clojure plugin for intellij idea

@@ -2,3 +2,4 @@
 
 - VSCode
 - Sublime
+- Clojure plugin for intellij idea

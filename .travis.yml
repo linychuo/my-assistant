@@ -1,0 +1,36 @@
+language: node_js
+node_js: 
+  - "8"
+
+install:
+  - npm install
+
+script: 
+  - npm run start vscode
+  - npm run start sublime
+
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $github_access_token
+    on:
+      branch: master
+      condition: -d "vscode-dist"
+    local-dir: vscode-dist
+    target-branch: vscode
+
+  - provider: pages
+    skip-cleanup: true
+    github-token: $github_access_token
+    on:
+      branch: master
+      condition: -d "sublime-dist"
+    local-dir: sublime-dist
+    target-branch: sublime
+
+  - provider: pages
+    skip-cleanup: true
+    github-token: $github_access_token
+    on:
+      branch: master
+    target-branch: master

@@ -1,0 +1,23 @@
+{
+  "name": "my-mirrors",
+  "version": "1.0.0",
+  "description": "my-mirrors",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linychuo/my-mirros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linychuo/my-mirros/issues"
+  },
+  "homepage": "https://github.com/linychuo/my-mirros#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0"
+  }
+}

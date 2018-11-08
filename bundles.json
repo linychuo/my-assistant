@@ -1,12 +1,12 @@
 {
   "vscode": {
     "url": "https://code.visualstudio.com/updates",
-    "version": "1.28.1",
+    "version": "1.28.2",
     "parser": "fetchVersionOfVSCode"
   },
   "sublime": {
     "url": "https://www.sublimetext.com/",
-    "version": "1.28.2",
+    "version": "(Build 3176)",
     "parser": "fetchVersionOfSublime"
   }
 }

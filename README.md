@@ -4,4 +4,3 @@
 
 - [libs](https://github.com/linychuo/my-mirrors/tree/libs) 
 - [plugins](https://github.com/linychuo/my-mirrors/tree/plugins) 
-- [editors](https://github.com/linychuo/my-mirrors/tree/editors)

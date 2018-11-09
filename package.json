@@ -1,23 +1,26 @@
 {
-  "name": "my-mirrors",
+  "name": "my-assistant",
   "version": "1.0.0",
-  "description": "my-mirrors",
+  "description": "my-assistant",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/linychuo/my-mirros.git"
+    "url": "git+https://github.com/linychuo/my-assistant.git"
   },
-  "author": "",
+  "author": "YongchaoLi",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/linychuo/my-mirros/issues"
+  "homepage": "https://github.com/linychuo/my-assistant#readme",
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
   },
-  "homepage": "https://github.com/linychuo/my-mirros#readme",
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "eslint": "^4.5.0",
+    "eslint-config-synacor": "^1.1.0"
   }
 }

@@ -13,7 +13,7 @@ const test = (name, _url) => {
 			}
 			let ws = fs.createWriteStream(`./${name}-dist/${name}-${newVersion}.exe`);
 			ws.on('close', () => {
-				console.log(`${name} download finished...........`);
+				console.log(`[${name}] download finished...........`);
 				bundles[name].version = newVersion;
 				console.log(bundles);
 				fs.writeFileSync('bundles.json', JSON.stringify(bundles, null, 2));
@@ -26,11 +26,16 @@ const test = (name, _url) => {
 
 const cmdArgv = process.argv;
 if (cmdArgv.length < 3) {
-	console.log('...............');
+	console.log('.......All tasks will running async!!........');
+	Object.entries(bundles).forEach(([k, v]) => {
+		process.nextTick(() => {
+			test(k, v.url);
+		});
+	});
 }
 else {
-	let bunleName = cmdArgv[2];
-	if (bundles[bunleName]) {
-		test(bunleName, bundles[bunleName]);
+	let bundleName = cmdArgv[2];
+	if (bundles[bundleName]) {
+		test(bundleName, bundles[bundleName].url);
 	}
 }

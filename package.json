@@ -19,8 +19,10 @@
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "request": "^2.88.0",
     "eslint": "^4.5.0",
-    "eslint-config-synacor": "^1.1.0"
+    "eslint-config-synacor": "^1.1.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "nodemailer": "^4.6.8"
   }
 }

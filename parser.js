@@ -15,6 +15,7 @@ exports.fetchVersionOfSublime = body => {
 };
 
 exports.fetchVersionOfRust = body => {
+	// https://forge.rust-lang.org/other-installation-methods.html
 	let t = $(body).find('div.installer-table.stable a')
 		.filter((i, el) => $(el).prop('href').endsWith('x86_64-pc-windows-gnu.msi'));
 	let downloadURL = $(t[0]).prop('href');

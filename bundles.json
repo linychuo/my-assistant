@@ -9,9 +9,4 @@
 		"version": "(Build 3176)",
 		"parser": "fetchVersionOfSublime"
 	}
-	// "rust": {
-	// 	"url": "https://forge.rust-lang.org/other-installation-methods.html",
-	// 	"version": "1.0.0",
-	// 	"parser": "fetchVersionOfRust"
-	// }
 }

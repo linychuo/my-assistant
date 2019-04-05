@@ -1,7 +1,7 @@
 {
   "vscode": {
     "url": "https://code.visualstudio.com/updates",
-    "version": "1.32.3",
+    "version": "1.33.0",
     "parser": "fetchVersionOfVSCode"
   },
   "sublime": {

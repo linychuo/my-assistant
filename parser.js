@@ -2,7 +2,7 @@ const $ = require('cheerio');
 const url = require('url');
 
 exports.fetchVersionOfVSCode = body => {
-	let t = $(body).find('div.body a').filter((i, el) => $(el).text() === 'Windows');
+	let t = $(body).find('div.releases a').filter((i, el) => $(el).text() === 'System');
 	let downloadURL = $(t[0]).prop('href');
 	let newVersion = url.parse(downloadURL).pathname.split('/')[1];
 	return { newVersion, downloadURL };

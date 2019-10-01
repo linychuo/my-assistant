@@ -6,7 +6,7 @@
   },
   "sublime": {
     "url": "https://www.sublimetext.com/",
-    "version": "(Build 3207)",
+    "version": "(Build 3211)",
     "parser": "fetchVersionOfSublime"
   }
 }
